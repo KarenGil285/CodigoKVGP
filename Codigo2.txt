@@ -1,0 +1,33 @@
+iniciar-programa
+define-nueva-instruccion gira-derecha como inicio
+  repetir 3 veces inicio
+    gira-izquierda;
+  fin;
+fin;
+    inicia-ejecucion
+      mientras orientado-al-este hacer inicio
+        gira-izquierda;
+        avanza;
+      fin;
+      mientras no-orientado-al-este hacer inicio
+        gira-izquierda;
+      fin;
+      mientras orientado-al-este hacer inicio
+        gira-izquierda;
+      fin;
+      mientras frente-libre hacer inicio
+        avanza;
+      fin;
+      gira-derecha;
+      mientras izquierda-bloqueada hacer inicio
+        si frente-bloqueado entonces inicio
+          gira-derecha;
+        fin;
+        avanza;
+      fin;
+      gira-izquierda;
+      avanza;
+      avanza;
+      apagate;
+    termina-ejecucion
+finalizar-programa
